@@ -15,7 +15,7 @@ public class DatabaseApplication extends Application {
     public void start(Stage primaryStage) throws Exception{
         User.initializeDatabase();
 
-        URL url = new File("src/main/java/sample/database_client.fxml").toURI().toURL();
+        URL url = new File("src/main/java/com/jvetter/databaseclient/database_client.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
 
         primaryStage.setTitle("DB Editor");
